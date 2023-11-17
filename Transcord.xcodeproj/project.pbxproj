@@ -14,6 +14,7 @@
 		83E05D5A2ACEDD1E00B60A98 /* TranscordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D592ACEDD1E00B60A98 /* TranscordTests.swift */; };
 		83E05D642ACEDD1F00B60A98 /* TranscordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D632ACEDD1F00B60A98 /* TranscordUITests.swift */; };
 		83E05D662ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */; };
+		CF42D1CB2B07430500BA5317 /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF42D1CA2B07430500BA5317 /* Test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		83E05D5F2ACEDD1F00B60A98 /* TranscordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranscordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D632ACEDD1F00B60A98 /* TranscordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordUITests.swift; sourceTree = "<group>"; };
 		83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF42D1CA2B07430500BA5317 /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
 				83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */,
 				83E05D4E2ACEDD1E00B60A98 /* Preview Content */,
+				CF42D1CA2B07430500BA5317 /* Test.swift */,
 			);
 			path = Transcord;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			files = (
 				83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
+				CF42D1CB2B07430500BA5317 /* Test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
