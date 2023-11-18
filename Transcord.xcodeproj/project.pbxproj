@@ -80,6 +80,7 @@
 		835F86732B08BD2A00744A06 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
 				835F86742B08BD2E00744A06 /* RecordView */,
 			);
 			path = View;
@@ -120,7 +121,6 @@
 			children = (
 				835F86732B08BD2A00744A06 /* View */,
 				83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */,
-				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
 				83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */,
 				83E05D4E2ACEDD1E00B60A98 /* Preview Content */,
 			);

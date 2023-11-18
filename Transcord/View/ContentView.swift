@@ -9,13 +9,21 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            Group {
+                RecordView()
+                    .tabItem {
+                        Image(systemName: "waveform.circle")
+                        Text("Record")
+                    }
+                Text("Audio File List View goes here")
+                    .tabItem {
+                        Image(systemName: "headphones")
+                        Text("Audio")
+                    }
+            }
+            .toolbarBackground(.visible, for: .tabBar)
         }
-        .padding()
     }
 }
 
