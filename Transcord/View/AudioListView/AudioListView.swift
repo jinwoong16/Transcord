@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct AudioListView: View {
-    let audios: [Audio]
+    @EnvironmentObject var viewModel: AudioListViewModel
     
     var body: some View {
         List {
-            ForEach(audios) { audio in
-                    AudioListRow(audio: audio)
+            ForEach(viewModel.audios) { audio in
+                AudioListRow(audio: audio)
             }
         }
+        .onAppear(perform: {
+            viewModel.loadFiles()
+        })
     }
 }
 
 #Preview {
-    AudioListView(
-        audios: audios
-    )
+    AudioListView()
+        .environmentObject(audioListViewModelMock)
 }
