@@ -23,6 +23,12 @@ final class RecordViewModel: ObservableObject {
             await MainActor.run {
                 isRecording = true
             }
+            do {
+                let audioURL = getDocumentsDirectory().appending(path: "audio/\(DateFormatter.pwFormatter(from: Date())).m4a")
+                try await audioRecorder.start(url: audioURL)
+            } catch {
+                print("‼️ error: \(error)")
+            }
         }
     }
     
@@ -31,6 +37,12 @@ final class RecordViewModel: ObservableObject {
             await MainActor.run {
                 isRecording = false
             }
+            await audioRecorder.stop()
         }
+    }
+    
+    private func getDocumentsDirectory() -> URL {
+        let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+        return paths.first!
     }
 }
