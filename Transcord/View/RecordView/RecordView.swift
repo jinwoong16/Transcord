@@ -23,4 +23,5 @@ struct RecordView: View {
 
 #Preview {
     RecordView()
+        .environmentObject(recordViewModelMock)
 }
