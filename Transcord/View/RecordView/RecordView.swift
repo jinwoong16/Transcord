@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct RecordView: View {
-    @State private var isRecording = false
+    @EnvironmentObject var viewModel: RecordViewModel
     
     var body: some View {
         VStack {
             Spacer()
-            RecordStatusView(isRecording: $isRecording)
+            RecordStatusView(isRecording: $viewModel.isRecording)
             Spacer()
-            RecordButtonView(isRecording: $isRecording)
+            RecordButtonView(isRecording: $viewModel.isRecording)
         }
         .padding(.vertical)
     }

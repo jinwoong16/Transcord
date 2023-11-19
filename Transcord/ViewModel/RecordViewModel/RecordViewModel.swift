@@ -11,7 +11,7 @@ import PWRecordKit
 final class RecordViewModel: ObservableObject {
     private let audioRecorder: AudioRecorder
     
-    @Published private(set) var isRecording: Bool = false
+    @Published var isRecording: Bool = false
     
     
     init(audioRecorder: AudioRecorder) {
