@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct RecordButtonView: View {
-    @Binding var isRecording: Bool
+    @EnvironmentObject var recordViewModel: RecordViewModel
     
     var body: some View {
         Button {
-            isRecording.toggle()
+            recordViewModel.isRecording
+            ? recordViewModel.stopRecord()
+            : recordViewModel.startRecord()
         } label: {
-            Image(systemName: isRecording ? "stop.circle" : "record.circle")
+            Image(systemName: recordViewModel.isRecording ? "stop.circle" : "record.circle")
                 .font(.system(size: 72))
                 .symbolRenderingMode(.palette)
                 .foregroundStyle(.red, .black)
@@ -23,5 +25,6 @@ struct RecordButtonView: View {
 }
 
 #Preview {
-    RecordButtonView(isRecording: .constant(false))
+    RecordButtonView()
+        .environmentObject(recordViewModelMock)
 }

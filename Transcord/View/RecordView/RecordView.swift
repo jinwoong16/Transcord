@@ -15,7 +15,7 @@ struct RecordView: View {
             Spacer()
             RecordStatusView(isRecording: $viewModel.isRecording)
             Spacer()
-            RecordButtonView(isRecording: $viewModel.isRecording)
+            RecordButtonView()
         }
         .padding(.vertical)
     }
