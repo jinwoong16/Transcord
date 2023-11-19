@@ -24,10 +24,11 @@ final class AudioListViewModel: ObservableObject {
 
     func loadFiles() {
         let documentURL = getDocumentsDirectory()
+        let audioListURL = documentURL.appending(path: "audio")
         
         do {
             let directoryContents = try FileManager.default.contentsOfDirectory(
-                at: documentURL,
+                at: audioListURL,
                 includingPropertiesForKeys: nil
             )
             
