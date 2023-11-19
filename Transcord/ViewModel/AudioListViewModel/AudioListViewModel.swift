@@ -11,12 +11,6 @@ import Combine
 final class AudioListViewModel: ObservableObject {
     @Published var audios: [Audio] = []
     
-    init() {
-        #if DEBUG
-            print(getDocumentsDirectory())
-        #endif
-    }
-    
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths.first!

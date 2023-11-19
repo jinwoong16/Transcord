@@ -13,7 +13,7 @@ struct AudioListRow: View {
     var body: some View {
         VStack(alignment: .leading, content: {
             Text("\(audio.title)")
-                .font(.title)
+                .font(.title2)
             
             Text("\(audio.id)")
                 .font(.caption)
