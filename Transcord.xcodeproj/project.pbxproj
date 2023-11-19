@@ -10,6 +10,7 @@
 		835F86762B08BD3900744A06 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86752B08BD3900744A06 /* RecordView.swift */; };
 		835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86772B08C13900744A06 /* RecordStatusView.swift */; };
 		835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F867A2B08C16700744A06 /* RecordButtonView.swift */; };
+		835F86812B08C4A200744A06 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86802B08C4A200744A06 /* Audio.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
 		83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */; };
 		83E05D4D2ACEDD1E00B60A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 		835F86752B08BD3900744A06 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		835F86772B08C13900744A06 /* RecordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatusView.swift; sourceTree = "<group>"; };
 		835F867A2B08C16700744A06 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		835F86802B08C4A200744A06 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
 		83E05D452ACEDD1E00B60A98 /* Transcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordApp.swift; sourceTree = "<group>"; };
 		83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
+				835F867C2B08C3C200744A06 /* AudioListView */,
 				835F86742B08BD2E00744A06 /* RecordView */,
 			);
 			path = View;
@@ -94,6 +97,21 @@
 				835F867A2B08C16700744A06 /* RecordButtonView.swift */,
 			);
 			path = RecordView;
+			sourceTree = "<group>";
+		};
+		835F867C2B08C3C200744A06 /* AudioListView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AudioListView;
+			sourceTree = "<group>";
+		};
+		835F867F2B08C43300744A06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				835F86802B08C4A200744A06 /* Audio.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		83E05D3C2ACEDD1E00B60A98 = {
@@ -119,6 +137,7 @@
 		83E05D472ACEDD1E00B60A98 /* Transcord */ = {
 			isa = PBXGroup;
 			children = (
+				835F867F2B08C43300744A06 /* Model */,
 				835F86732B08BD2A00744A06 /* View */,
 				83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */,
 				83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */,
@@ -287,6 +306,7 @@
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
 				835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */,
+				835F86812B08C4A200744A06 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
