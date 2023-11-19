@@ -11,11 +11,13 @@ import PWRecordKit
 @main
 struct TranscordApp: App {
     private let recordViewModel = RecordViewModel(audioRecorder: DefaultAudioRecorder())
+    private let audioListViewModel = AudioListViewModel()
     
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(recordViewModel)
+                .environmentObject(audioListViewModel)
         }
     }
 }
