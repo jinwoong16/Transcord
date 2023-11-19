@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0CC2B0A215C0076009A /* AudioListView.swift */; };
+		8328D0D02B0A217E0076009A /* AudioListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */; };
+		8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0D12B0A25A60076009A /* AudioListRow.swift */; };
 		835F86762B08BD3900744A06 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86752B08BD3900744A06 /* RecordView.swift */; };
 		835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86772B08C13900744A06 /* RecordStatusView.swift */; };
 		835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F867A2B08C16700744A06 /* RecordButtonView.swift */; };
@@ -56,6 +59,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		8328D0CC2B0A215C0076009A /* AudioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListView.swift; sourceTree = "<group>"; };
+		8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewModelMock.swift; sourceTree = "<group>"; };
+		8328D0D12B0A25A60076009A /* AudioListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListRow.swift; sourceTree = "<group>"; };
 		835F86752B08BD3900744A06 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
 		835F86772B08C13900744A06 /* RecordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatusView.swift; sourceTree = "<group>"; };
 		835F867A2B08C16700744A06 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
@@ -101,6 +107,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8328D0CE2B0A216E0076009A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
+				8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		835F86732B08BD2A00744A06 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +139,8 @@
 		835F867C2B08C3C200744A06 /* AudioListView */ = {
 			isa = PBXGroup;
 			children = (
+				8328D0CC2B0A215C0076009A /* AudioListView.swift */,
+				8328D0D12B0A25A60076009A /* AudioListRow.swift */,
 			);
 			path = AudioListView;
 			sourceTree = "<group>";
@@ -197,8 +214,8 @@
 		83E05D4E2ACEDD1E00B60A98 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8328D0CE2B0A216E0076009A /* Mocks */,
 				83E05D4F2ACEDD1E00B60A98 /* Preview Assets.xcassets */,
-				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -355,8 +372,11 @@
 				835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */,
 				835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */,
 				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
+				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
+				8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */,
+				8328D0D02B0A217E0076009A /* AudioListViewModelMock.swift in Sources */,
 				835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */,
 				835F86812B08C4A200744A06 /* Audio.swift in Sources */,
 			);
