@@ -16,7 +16,7 @@ struct ContentView: View {
                         Image(systemName: "waveform.circle")
                         Text("Record")
                     }
-                Text("Audio File List View goes here")
+                AudioListView()
                     .tabItem {
                         Image(systemName: "headphones")
                         Text("Audio")
@@ -31,5 +31,6 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
             .environmentObject(recordViewModelMock)
+            .environmentObject(audioListViewModelMock)
     }
 }
