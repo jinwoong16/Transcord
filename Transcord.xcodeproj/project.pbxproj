@@ -7,6 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0CC2B0A215C0076009A /* AudioListView.swift */; };
+		8328D0D02B0A217E0076009A /* AudioListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */; };
+		8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0D12B0A25A60076009A /* AudioListRow.swift */; };
+		8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0D42B0A26A80076009A /* AudioListViewModel.swift */; };
+		8328D0D82B0A30C80076009A /* DateFormatter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8328D0D72B0A30C80076009A /* DateFormatter+.swift */; };
+		835F86762B08BD3900744A06 /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86752B08BD3900744A06 /* RecordView.swift */; };
+		835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86772B08C13900744A06 /* RecordStatusView.swift */; };
+		835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F867A2B08C16700744A06 /* RecordButtonView.swift */; };
+		835F86812B08C4A200744A06 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86802B08C4A200744A06 /* Audio.swift */; };
+		835F86882B0A12C100744A06 /* PWRecordKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; };
+		835F86892B0A12C100744A06 /* PWRecordKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F868C2B0A171E00744A06 /* RecordViewModel.swift */; };
+		835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
 		83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */; };
 		83E05D4D2ACEDD1E00B60A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */; };
@@ -33,7 +46,33 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		835F868A2B0A12C100744A06 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				835F86892B0A12C100744A06 /* PWRecordKit.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		8328D0CC2B0A215C0076009A /* AudioListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListView.swift; sourceTree = "<group>"; };
+		8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewModelMock.swift; sourceTree = "<group>"; };
+		8328D0D12B0A25A60076009A /* AudioListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListRow.swift; sourceTree = "<group>"; };
+		8328D0D42B0A26A80076009A /* AudioListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioListViewModel.swift; sourceTree = "<group>"; };
+		8328D0D72B0A30C80076009A /* DateFormatter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+.swift"; sourceTree = "<group>"; };
+		835F86752B08BD3900744A06 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		835F86772B08C13900744A06 /* RecordStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordStatusView.swift; sourceTree = "<group>"; };
+		835F867A2B08C16700744A06 /* RecordButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButtonView.swift; sourceTree = "<group>"; };
+		835F86802B08C4A200744A06 /* Audio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWRecordKit.xcframework; path = "../../swift-framework/PWRecordKit/build/PWRecordKit.xcframework"; sourceTree = "<group>"; };
+		835F868C2B0A171E00744A06 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
+		835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModelMock.swift; sourceTree = "<group>"; };
 		83E05D452ACEDD1E00B60A98 /* Transcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordApp.swift; sourceTree = "<group>"; };
 		83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				835F86882B0A12C100744A06 /* PWRecordKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +111,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8328D0CE2B0A216E0076009A /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
+				8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		8328D0D32B0A269A0076009A /* AudioListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8328D0D42B0A26A80076009A /* AudioListViewModel.swift */,
+			);
+			path = AudioListViewModel;
+			sourceTree = "<group>";
+		};
+		8328D0D62B0A30BB0076009A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				8328D0D72B0A30C80076009A /* DateFormatter+.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		835F86732B08BD2A00744A06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
+				835F867C2B08C3C200744A06 /* AudioListView */,
+				835F86742B08BD2E00744A06 /* RecordView */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		835F86742B08BD2E00744A06 /* RecordView */ = {
+			isa = PBXGroup;
+			children = (
+				835F86752B08BD3900744A06 /* RecordView.swift */,
+				835F86772B08C13900744A06 /* RecordStatusView.swift */,
+				835F867A2B08C16700744A06 /* RecordButtonView.swift */,
+			);
+			path = RecordView;
+			sourceTree = "<group>";
+		};
+		835F867C2B08C3C200744A06 /* AudioListView */ = {
+			isa = PBXGroup;
+			children = (
+				8328D0CC2B0A215C0076009A /* AudioListView.swift */,
+				8328D0D12B0A25A60076009A /* AudioListRow.swift */,
+			);
+			path = AudioListView;
+			sourceTree = "<group>";
+		};
+		835F867F2B08C43300744A06 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				835F86802B08C4A200744A06 /* Audio.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		835F86822B0A0FA700744A06 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		835F86872B0A0FC200744A06 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8328D0D32B0A269A0076009A /* AudioListViewModel */,
+				835F868B2B0A132D00744A06 /* RecordViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		835F868B2B0A132D00744A06 /* RecordViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				835F868C2B0A171E00744A06 /* RecordViewModel.swift */,
+			);
+			path = RecordViewModel;
+			sourceTree = "<group>";
+		};
 		83E05D3C2ACEDD1E00B60A98 = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +205,7 @@
 				83E05D582ACEDD1E00B60A98 /* TranscordTests */,
 				83E05D622ACEDD1F00B60A98 /* TranscordUITests */,
 				83E05D462ACEDD1E00B60A98 /* Products */,
+				835F86822B0A0FA700744A06 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,8 +222,11 @@
 		83E05D472ACEDD1E00B60A98 /* Transcord */ = {
 			isa = PBXGroup;
 			children = (
+				8328D0D62B0A30BB0076009A /* Utils */,
+				835F86872B0A0FC200744A06 /* ViewModel */,
+				835F867F2B08C43300744A06 /* Model */,
+				835F86732B08BD2A00744A06 /* View */,
 				83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */,
-				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
 				83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */,
 				83E05D4E2ACEDD1E00B60A98 /* Preview Content */,
 			);
@@ -105,6 +236,7 @@
 		83E05D4E2ACEDD1E00B60A98 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				8328D0CE2B0A216E0076009A /* Mocks */,
 				83E05D4F2ACEDD1E00B60A98 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -137,6 +269,7 @@
 				83E05D412ACEDD1E00B60A98 /* Sources */,
 				83E05D422ACEDD1E00B60A98 /* Frameworks */,
 				83E05D432ACEDD1E00B60A98 /* Resources */,
+				835F868A2B0A12C100744A06 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,7 +324,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					83E05D442ACEDD1E00B60A98 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -258,7 +391,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */,
+				835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */,
+				8328D0D82B0A30C80076009A /* DateFormatter+.swift in Sources */,
+				835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */,
+				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
+				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
+				8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
+				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
+				8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */,
+				8328D0D02B0A217E0076009A /* AudioListViewModelMock.swift in Sources */,
+				835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */,
+				835F86812B08C4A200744A06 /* Audio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +475,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -391,6 +536,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -422,11 +568,13 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ERT3ZH7BA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone.\nThe microphone is used to record voice memos\nand enable audio features.\nWould you like to allow microphone access?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,11 +603,13 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ERT3ZH7BA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone.\nThe microphone is used to record voice memos\nand enable audio features.\nWould you like to allow microphone access?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
