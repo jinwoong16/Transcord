@@ -16,8 +16,6 @@
 		835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86772B08C13900744A06 /* RecordStatusView.swift */; };
 		835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F867A2B08C16700744A06 /* RecordButtonView.swift */; };
 		835F86812B08C4A200744A06 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86802B08C4A200744A06 /* Audio.swift */; };
-		835F86882B0A12C100744A06 /* PWRecordKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; };
-		835F86892B0A12C100744A06 /* PWRecordKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F868C2B0A171E00744A06 /* RecordViewModel.swift */; };
 		835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
@@ -27,6 +25,8 @@
 		83E05D5A2ACEDD1E00B60A98 /* TranscordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D592ACEDD1E00B60A98 /* TranscordTests.swift */; };
 		83E05D642ACEDD1F00B60A98 /* TranscordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D632ACEDD1F00B60A98 /* TranscordUITests.swift */; };
 		83E05D662ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */; };
+		CFFD917A2B0B5B75007A40D3 /* PWRecordKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; };
+		CFFD917B2B0B5B75007A40D3 /* PWRecordKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,13 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		835F868A2B0A12C100744A06 /* Embed Frameworks */ = {
+		CFFD917C2B0B5B75007A40D3 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				835F86892B0A12C100744A06 /* PWRecordKit.xcframework in Embed Frameworks */,
+				CFFD917B2B0B5B75007A40D3 /* PWRecordKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				835F86882B0A12C100744A06 /* PWRecordKit.xcframework in Frameworks */,
+				CFFD917A2B0B5B75007A40D3 /* PWRecordKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +269,7 @@
 				83E05D412ACEDD1E00B60A98 /* Sources */,
 				83E05D422ACEDD1E00B60A98 /* Frameworks */,
 				83E05D432ACEDD1E00B60A98 /* Resources */,
-				835F868A2B0A12C100744A06 /* Embed Frameworks */,
+				CFFD917C2B0B5B75007A40D3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
