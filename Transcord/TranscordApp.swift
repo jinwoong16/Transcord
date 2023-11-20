@@ -15,7 +15,6 @@ struct TranscordApp: App {
     
     init() {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        
         let audioListPath = paths.appending(path: "audio")
         
         if !FileManager.default.fileExists(atPath: audioListPath.path()) {
@@ -25,6 +24,10 @@ struct TranscordApp: App {
                 print("‼️ error: \(error)")
             }
         }
+        
+        #if DEBUG
+            print(paths)
+        #endif
     }
     
     var body: some Scene {
