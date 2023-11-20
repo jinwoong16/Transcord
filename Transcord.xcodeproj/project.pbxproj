@@ -568,7 +568,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ERT3ZH7BA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A message that tells the user why the app is requesting access to the device’s microphone.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone.\nThe microphone is used to record voice memos\nand enable audio features.\nWould you like to allow microphone access?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -603,7 +603,7 @@
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = ERT3ZH7BA7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "A message that tells the user why the app is requesting access to the device’s microphone.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We need access to your microphone.\nThe microphone is used to record voice memos\nand enable audio features.\nWould you like to allow microphone access?";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
