@@ -13,7 +13,6 @@ final class RecordViewModel: ObservableObject {
     
     @Published var isRecording: Bool = false
     
-    
     init(audioRecorder: AudioRecorder) {
         self.audioRecorder = audioRecorder
     }
