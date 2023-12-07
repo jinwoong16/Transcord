@@ -11,14 +11,21 @@ struct AudioListView: View {
     @EnvironmentObject var viewModel: AudioListViewModel
     
     var body: some View {
-        List {
-            ForEach(viewModel.audios) { audio in
-                AudioListRow(audio: audio)
+        NavigationView {
+            List {
+                ForEach(viewModel.audios) { audio in
+                    NavigationLink {
+                        AudioDetailView(audio: audio)
+                    } label: {
+                        AudioListRow(audio: audio)
+                    }
+                }
             }
+            .onAppear(perform: {
+                viewModel.loadFiles()
+            })
         }
-        .onAppear(perform: {
-            viewModel.loadFiles()
-        })
+        .listStyle(PlainListStyle())
     }
 }
 
