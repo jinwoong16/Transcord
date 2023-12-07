@@ -30,6 +30,9 @@
 		839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */; };
 		839CB50F2B2181FD002A4C67 /* TranscriptListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */; };
 		839CB5112B21826D002A4C67 /* TranscriptListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB5102B21826D002A4C67 /* TranscriptListRow.swift */; };
+		839CB5132B2189E7002A4C67 /* TranscriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB5122B2189E7002A4C67 /* TranscriptDetailView.swift */; };
+		839CB5152B218A7C002A4C67 /* TranscriptDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB5142B218A7C002A4C67 /* TranscriptDetailViewModel.swift */; };
+		839CB5172B2190B0002A4C67 /* TranscriptDetailViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB5162B2190B0002A4C67 /* TranscriptDetailViewModelMock.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
 		83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */; };
 		83E05D4D2ACEDD1E00B60A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */; };
@@ -97,6 +100,9 @@
 		839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListViewModel.swift; sourceTree = "<group>"; };
 		839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListViewModelMock.swift; sourceTree = "<group>"; };
 		839CB5102B21826D002A4C67 /* TranscriptListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListRow.swift; sourceTree = "<group>"; };
+		839CB5122B2189E7002A4C67 /* TranscriptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailView.swift; sourceTree = "<group>"; };
+		839CB5142B218A7C002A4C67 /* TranscriptDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailViewModel.swift; sourceTree = "<group>"; };
+		839CB5162B2190B0002A4C67 /* TranscriptDetailViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptDetailViewModelMock.swift; sourceTree = "<group>"; };
 		83E05D452ACEDD1E00B60A98 /* Transcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordApp.swift; sourceTree = "<group>"; };
 		83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -145,6 +151,7 @@
 				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
 				8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */,
 				839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */,
+				839CB5162B2190B0002A4C67 /* TranscriptDetailViewModelMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -238,6 +245,7 @@
 			children = (
 				839CB4FD2B217EAA002A4C67 /* TranscriptListView.swift */,
 				839CB5102B21826D002A4C67 /* TranscriptListRow.swift */,
+				839CB5122B2189E7002A4C67 /* TranscriptDetailView.swift */,
 			);
 			path = TranscribeView;
 			sourceTree = "<group>";
@@ -246,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */,
+				839CB5142B218A7C002A4C67 /* TranscriptDetailViewModel.swift */,
 			);
 			path = TranscribeViewModel;
 			sourceTree = "<group>";
@@ -445,13 +454,16 @@
 				83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */,
 				835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */,
 				8328D0D82B0A30C80076009A /* DateFormatter+.swift in Sources */,
+				839CB5132B2189E7002A4C67 /* TranscriptDetailView.swift in Sources */,
 				835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */,
 				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
 				839CB4FE2B217EAA002A4C67 /* TranscriptListView.swift in Sources */,
 				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
 				839CB5112B21826D002A4C67 /* TranscriptListRow.swift in Sources */,
+				839CB5172B2190B0002A4C67 /* TranscriptDetailViewModelMock.swift in Sources */,
 				8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */,
 				839CB50F2B2181FD002A4C67 /* TranscriptListViewModelMock.swift in Sources */,
+				839CB5152B218A7C002A4C67 /* TranscriptDetailViewModel.swift in Sources */,
 				839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,

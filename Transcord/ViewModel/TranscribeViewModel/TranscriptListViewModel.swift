@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Transcript: Identifiable {
+struct Transcript: Identifiable, Hashable {
     let id: UUID
     let title: String
     let url: URL
