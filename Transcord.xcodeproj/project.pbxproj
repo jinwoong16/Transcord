@@ -18,6 +18,16 @@
 		835F86812B08C4A200744A06 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86802B08C4A200744A06 /* Audio.swift */; };
 		835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F868C2B0A171E00744A06 /* RecordViewModel.swift */; };
 		835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */; };
+		839CB4FE2B217EAA002A4C67 /* TranscriptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB4FD2B217EAA002A4C67 /* TranscriptListView.swift */; };
+		839CB5002B217EFA002A4C67 /* PWNetworkingKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB4FF2B217EFA002A4C67 /* PWNetworkingKit.xcframework */; };
+		839CB5012B217EFA002A4C67 /* PWNetworkingKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB4FF2B217EFA002A4C67 /* PWNetworkingKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		839CB5032B217F09002A4C67 /* PWKeychainKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5022B217F09002A4C67 /* PWKeychainKit.xcframework */; };
+		839CB5042B217F09002A4C67 /* PWKeychainKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5022B217F09002A4C67 /* PWKeychainKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		839CB5062B217F15002A4C67 /* PWApiWorker.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5052B217F15002A4C67 /* PWApiWorker.xcframework */; };
+		839CB5072B217F15002A4C67 /* PWApiWorker.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5052B217F15002A4C67 /* PWApiWorker.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		839CB5092B217F21002A4C67 /* PWTranscribingKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */; };
+		839CB50A2B217F21002A4C67 /* PWTranscribingKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
 		83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */; };
 		83E05D4D2ACEDD1E00B60A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */; };
@@ -53,7 +63,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				839CB5042B217F09002A4C67 /* PWKeychainKit.xcframework in Embed Frameworks */,
+				839CB50A2B217F21002A4C67 /* PWTranscribingKit.xcframework in Embed Frameworks */,
+				839CB5072B217F15002A4C67 /* PWApiWorker.xcframework in Embed Frameworks */,
 				CFFD917B2B0B5B75007A40D3 /* PWRecordKit.xcframework in Embed Frameworks */,
+				839CB5012B217EFA002A4C67 /* PWNetworkingKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -73,6 +87,12 @@
 		835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWRecordKit.xcframework; path = "../../swift-framework/PWRecordKit/build/PWRecordKit.xcframework"; sourceTree = "<group>"; };
 		835F868C2B0A171E00744A06 /* RecordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModel.swift; sourceTree = "<group>"; };
 		835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordViewModelMock.swift; sourceTree = "<group>"; };
+		839CB4FD2B217EAA002A4C67 /* TranscriptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListView.swift; sourceTree = "<group>"; };
+		839CB4FF2B217EFA002A4C67 /* PWNetworkingKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWNetworkingKit.xcframework; path = "../../swift-framework/PWNetworkingKit/build/PWNetworkingKit.xcframework"; sourceTree = "<group>"; };
+		839CB5022B217F09002A4C67 /* PWKeychainKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWKeychainKit.xcframework; path = "../../swift-framework/PWKeychainKit/build/PWKeychainKit.xcframework"; sourceTree = "<group>"; };
+		839CB5052B217F15002A4C67 /* PWApiWorker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWApiWorker.xcframework; path = "../../swift-framework/PWApiWorker/build/PWApiWorker.xcframework"; sourceTree = "<group>"; };
+		839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWTranscribingKit.xcframework; path = "../../swift-framework/PWTranscribingKit/build/PWTranscribingKit.xcframework"; sourceTree = "<group>"; };
+		839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListViewModel.swift; sourceTree = "<group>"; };
 		83E05D452ACEDD1E00B60A98 /* Transcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordApp.swift; sourceTree = "<group>"; };
 		83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -90,7 +110,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839CB5032B217F09002A4C67 /* PWKeychainKit.xcframework in Frameworks */,
+				839CB5092B217F21002A4C67 /* PWTranscribingKit.xcframework in Frameworks */,
+				839CB5062B217F15002A4C67 /* PWApiWorker.xcframework in Frameworks */,
 				CFFD917A2B0B5B75007A40D3 /* PWRecordKit.xcframework in Frameworks */,
+				839CB5002B217EFA002A4C67 /* PWNetworkingKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
+				839CB4FC2B217E91002A4C67 /* TranscribeView */,
 				835F867C2B08C3C200744A06 /* AudioListView */,
 				835F86742B08BD2E00744A06 /* RecordView */,
 			);
@@ -176,6 +201,10 @@
 		835F86822B0A0FA700744A06 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */,
+				839CB5052B217F15002A4C67 /* PWApiWorker.xcframework */,
+				839CB5022B217F09002A4C67 /* PWKeychainKit.xcframework */,
+				839CB4FF2B217EFA002A4C67 /* PWNetworkingKit.xcframework */,
 				835F86832B0A0FA700744A06 /* PWRecordKit.xcframework */,
 			);
 			name = Frameworks;
@@ -184,6 +213,7 @@
 		835F86872B0A0FC200744A06 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				839CB50B2B217F3C002A4C67 /* TranscribeViewModel */,
 				8328D0D32B0A269A0076009A /* AudioListViewModel */,
 				835F868B2B0A132D00744A06 /* RecordViewModel */,
 			);
@@ -196,6 +226,22 @@
 				835F868C2B0A171E00744A06 /* RecordViewModel.swift */,
 			);
 			path = RecordViewModel;
+			sourceTree = "<group>";
+		};
+		839CB4FC2B217E91002A4C67 /* TranscribeView */ = {
+			isa = PBXGroup;
+			children = (
+				839CB4FD2B217EAA002A4C67 /* TranscriptListView.swift */,
+			);
+			path = TranscribeView;
+			sourceTree = "<group>";
+		};
+		839CB50B2B217F3C002A4C67 /* TranscribeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */,
+			);
+			path = TranscribeViewModel;
 			sourceTree = "<group>";
 		};
 		83E05D3C2ACEDD1E00B60A98 = {
@@ -395,8 +441,10 @@
 				8328D0D82B0A30C80076009A /* DateFormatter+.swift in Sources */,
 				835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */,
 				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
+				839CB4FE2B217EAA002A4C67 /* TranscriptListView.swift in Sources */,
 				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
 				8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */,
+				839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
 				8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */,
