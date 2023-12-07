@@ -27,6 +27,21 @@
 		83E05D5A2ACEDD1E00B60A98 /* TranscordTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D592ACEDD1E00B60A98 /* TranscordTests.swift */; };
 		83E05D642ACEDD1F00B60A98 /* TranscordUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D632ACEDD1F00B60A98 /* TranscordUITests.swift */; };
 		83E05D662ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */; };
+		CF5FBEA82B1DA9DC00B501A6 /* AudioDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FBEA72B1DA9DC00B501A6 /* AudioDetailView.swift */; };
+		CF5FBEAA2B1DADB600B501A6 /* AudioProgressbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FBEA92B1DADB600B501A6 /* AudioProgressbar.swift */; };
+		CF5FBEAC2B1DDDCB00B501A6 /* AudioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5FBEAB2B1DDDCB00B501A6 /* AudioButton.swift */; };
+		CFE814AB2B21AEE90064041A /* ScriptListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814AA2B21AEE90064041A /* ScriptListView.swift */; };
+		CFE814AE2B21AF700064041A /* SummaryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814AD2B21AF700064041A /* SummaryListView.swift */; };
+		CFE814B02B21B01E0064041A /* ScriptDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814AF2B21B01E0064041A /* ScriptDetailView.swift */; };
+		CFE814B22B21B0650064041A /* ScriptListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814B12B21B0650064041A /* ScriptListRow.swift */; };
+		CFE814B42B21B08A0064041A /* SummaryListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814B32B21B08A0064041A /* SummaryListRow.swift */; };
+		CFE814B62B21B09F0064041A /* SummaryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814B52B21B09F0064041A /* SummaryDetailView.swift */; };
+		CFE814BA2B21B16D0064041A /* ScriptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814B92B21B16D0064041A /* ScriptListViewModel.swift */; };
+		CFE814BC2B21B20A0064041A /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814BB2B21B20A0064041A /* Script.swift */; };
+		CFE814BE2B21B2140064041A /* Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814BD2B21B2140064041A /* Summary.swift */; };
+		CFE814C02B21B2670064041A /* SummaryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814BF2B21B2670064041A /* SummaryListViewModel.swift */; };
+		CFE814C22B21B35B0064041A /* ScriptListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814C12B21B35B0064041A /* ScriptListViewModelMock.swift */; };
+		CFE814C42B21B3660064041A /* SummaryListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE814C32B21B3660064041A /* SummaryListViewModelMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +98,21 @@
 		83E05D5F2ACEDD1F00B60A98 /* TranscordUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranscordUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D632ACEDD1F00B60A98 /* TranscordUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordUITests.swift; sourceTree = "<group>"; };
 		83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CF5FBEA72B1DA9DC00B501A6 /* AudioDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioDetailView.swift; sourceTree = "<group>"; };
+		CF5FBEA92B1DADB600B501A6 /* AudioProgressbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioProgressbar.swift; sourceTree = "<group>"; };
+		CF5FBEAB2B1DDDCB00B501A6 /* AudioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioButton.swift; sourceTree = "<group>"; };
+		CFE814AA2B21AEE90064041A /* ScriptListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListView.swift; sourceTree = "<group>"; };
+		CFE814AD2B21AF700064041A /* SummaryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryListView.swift; sourceTree = "<group>"; };
+		CFE814AF2B21B01E0064041A /* ScriptDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptDetailView.swift; sourceTree = "<group>"; };
+		CFE814B12B21B0650064041A /* ScriptListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListRow.swift; sourceTree = "<group>"; };
+		CFE814B32B21B08A0064041A /* SummaryListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryListRow.swift; sourceTree = "<group>"; };
+		CFE814B52B21B09F0064041A /* SummaryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryDetailView.swift; sourceTree = "<group>"; };
+		CFE814B92B21B16D0064041A /* ScriptListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListViewModel.swift; sourceTree = "<group>"; };
+		CFE814BB2B21B20A0064041A /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		CFE814BD2B21B2140064041A /* Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Summary.swift; sourceTree = "<group>"; };
+		CFE814BF2B21B2670064041A /* SummaryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryListViewModel.swift; sourceTree = "<group>"; };
+		CFE814C12B21B35B0064041A /* ScriptListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListViewModelMock.swift; sourceTree = "<group>"; };
+		CFE814C32B21B3660064041A /* SummaryListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryListViewModelMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +146,8 @@
 			children = (
 				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
 				8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */,
+				CFE814C12B21B35B0064041A /* ScriptListViewModelMock.swift */,
+				CFE814C32B21B3660064041A /* SummaryListViewModelMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -140,8 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */,
-				835F867C2B08C3C200744A06 /* AudioListView */,
 				835F86742B08BD2E00744A06 /* RecordView */,
+				835F867C2B08C3C200744A06 /* AudioListView */,
+				CFE814A92B21AEAF0064041A /* ScriptListView */,
+				CFE814AC2B21AF4B0064041A /* SummaryListView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,7 +194,10 @@
 			isa = PBXGroup;
 			children = (
 				8328D0CC2B0A215C0076009A /* AudioListView.swift */,
+				CF5FBEA72B1DA9DC00B501A6 /* AudioDetailView.swift */,
 				8328D0D12B0A25A60076009A /* AudioListRow.swift */,
+				CF5FBEA92B1DADB600B501A6 /* AudioProgressbar.swift */,
+				CF5FBEAB2B1DDDCB00B501A6 /* AudioButton.swift */,
 			);
 			path = AudioListView;
 			sourceTree = "<group>";
@@ -169,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				835F86802B08C4A200744A06 /* Audio.swift */,
+				CFE814BB2B21B20A0064041A /* Script.swift */,
+				CFE814BD2B21B2140064041A /* Summary.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,8 +223,10 @@
 		835F86872B0A0FC200744A06 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				8328D0D32B0A269A0076009A /* AudioListViewModel */,
 				835F868B2B0A132D00744A06 /* RecordViewModel */,
+				8328D0D32B0A269A0076009A /* AudioListViewModel */,
+				CFE814B72B21B1040064041A /* ScriptListViewModel */,
+				CFE814B82B21B11B0064041A /* SummaryListViewModel */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -257,6 +298,42 @@
 				83E05D652ACEDD1F00B60A98 /* TranscordUITestsLaunchTests.swift */,
 			);
 			path = TranscordUITests;
+			sourceTree = "<group>";
+		};
+		CFE814A92B21AEAF0064041A /* ScriptListView */ = {
+			isa = PBXGroup;
+			children = (
+				CFE814AA2B21AEE90064041A /* ScriptListView.swift */,
+				CFE814B12B21B0650064041A /* ScriptListRow.swift */,
+				CFE814AF2B21B01E0064041A /* ScriptDetailView.swift */,
+			);
+			path = ScriptListView;
+			sourceTree = "<group>";
+		};
+		CFE814AC2B21AF4B0064041A /* SummaryListView */ = {
+			isa = PBXGroup;
+			children = (
+				CFE814AD2B21AF700064041A /* SummaryListView.swift */,
+				CFE814B32B21B08A0064041A /* SummaryListRow.swift */,
+				CFE814B52B21B09F0064041A /* SummaryDetailView.swift */,
+			);
+			path = SummaryListView;
+			sourceTree = "<group>";
+		};
+		CFE814B72B21B1040064041A /* ScriptListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFE814B92B21B16D0064041A /* ScriptListViewModel.swift */,
+			);
+			path = ScriptListViewModel;
+			sourceTree = "<group>";
+		};
+		CFE814B82B21B11B0064041A /* SummaryListViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CFE814BF2B21B2670064041A /* SummaryListViewModel.swift */,
+			);
+			path = SummaryListViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -390,19 +467,34 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE814AB2B21AEE90064041A /* ScriptListView.swift in Sources */,
 				83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */,
+				CFE814B62B21B09F0064041A /* SummaryDetailView.swift in Sources */,
 				835F86912B0A1FBD00744A06 /* RecordViewModelMock.swift in Sources */,
+				CFE814BC2B21B20A0064041A /* Script.swift in Sources */,
+				CFE814C42B21B3660064041A /* SummaryListViewModelMock.swift in Sources */,
+				CFE814B22B21B0650064041A /* ScriptListRow.swift in Sources */,
 				8328D0D82B0A30C80076009A /* DateFormatter+.swift in Sources */,
 				835F868D2B0A171E00744A06 /* RecordViewModel.swift in Sources */,
 				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
+				CFE814B42B21B08A0064041A /* SummaryListRow.swift in Sources */,
 				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
 				8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */,
+				CFE814B02B21B01E0064041A /* ScriptDetailView.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
+				CF5FBEA82B1DA9DC00B501A6 /* AudioDetailView.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
+				CFE814BE2B21B2140064041A /* Summary.swift in Sources */,
+				CF5FBEAC2B1DDDCB00B501A6 /* AudioButton.swift in Sources */,
 				8328D0CD2B0A215C0076009A /* AudioListView.swift in Sources */,
 				8328D0D02B0A217E0076009A /* AudioListViewModelMock.swift in Sources */,
 				835F867B2B08C16700744A06 /* RecordButtonView.swift in Sources */,
 				835F86812B08C4A200744A06 /* Audio.swift in Sources */,
+				CF5FBEAA2B1DADB600B501A6 /* AudioProgressbar.swift in Sources */,
+				CFE814C02B21B2670064041A /* SummaryListViewModel.swift in Sources */,
+				CFE814AE2B21AF700064041A /* SummaryListView.swift in Sources */,
+				CFE814C22B21B35B0064041A /* ScriptListViewModelMock.swift in Sources */,
+				CFE814BA2B21B16D0064041A /* ScriptListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

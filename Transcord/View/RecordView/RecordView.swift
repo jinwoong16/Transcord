@@ -13,7 +13,7 @@ struct RecordView: View {
     var body: some View {
         VStack {
             Spacer()
-            RecordStatusView(isRecording: $viewModel.isRecording)
+            RecordStatusView(isRecording: viewModel.isRecording, isLoading: viewModel.isLoading)
             Spacer()
             RecordButtonView()
         }

@@ -8,25 +8,35 @@
 import SwiftUI
 
 struct RecordStatusView: View {
-    @Binding var isRecording: Bool
+    var isRecording: Bool
+    var isLoading: Bool
     
     var body: some View {
-        if isRecording {
-            Image(systemName: "waveform")
+        if isRecording && !isLoading  {
+            Image(systemName: "waveform",variableValue: 0.0)
                 .resizable()
                 .foregroundStyle(.red)
                 .frame(width: 100, height: 100)
                 .symbolEffect(.variableColor.iterative.dimInactiveLayers.nonReversing)
-        } else {
-            Image(systemName: "waveform")
+                .transition(.opacity.animation(.easeInOut))
+        } else if !isRecording && isLoading {
+            Image(systemName: "aqi.medium",variableValue: 0.0)
                 .resizable()
                 .foregroundStyle(.gray)
                 .frame(width: 100, height: 100)
+                .symbolEffect(.variableColor.iterative.dimInactiveLayers.nonReversing)
+                .transition(.opacity.animation(.easeInOut))
+        } else if !isRecording && !isLoading {
+            Image(systemName: "waveform")
+                .resizable()
+                .foregroundColor(Color("WhiteGray"))
+                .frame(width: 100, height: 100)
+                .transition(.opacity.animation(.easeInOut))
         }
     }
 }
 
 
 #Preview {
-    RecordStatusView(isRecording: .constant(false))
+    RecordStatusView(isRecording: false, isLoading: false)
 }

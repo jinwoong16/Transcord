@@ -12,6 +12,8 @@ final class RecordViewModel: ObservableObject {
     private let audioRecorder: AudioRecorder
     
     @Published var isRecording: Bool = false
+    @Published var isLoading: Bool = false
+
     
     init(audioRecorder: AudioRecorder) {
         self.audioRecorder = audioRecorder
@@ -21,6 +23,7 @@ final class RecordViewModel: ObservableObject {
         Task {
             await MainActor.run {
                 isRecording = true
+                isLoading = false
             }
             do {
                 let audioURL = getDocumentsDirectory().appending(path: "audio/\(DateFormatter.pwFormatter(from: Date())).m4a")
@@ -35,10 +38,17 @@ final class RecordViewModel: ObservableObject {
         Task {
             await MainActor.run {
                 isRecording = false
+                isLoading = true
+            }
+            try? await Task.sleep(nanoseconds: 1_000_000_000 * 2)
+            await MainActor.run {
+                isLoading = false
             }
             await audioRecorder.stop()
         }
     }
+    
+    
     
     private func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
