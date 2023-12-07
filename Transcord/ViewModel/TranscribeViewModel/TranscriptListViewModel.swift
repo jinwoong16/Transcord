@@ -1,33 +1,39 @@
 //
-//  AudioListViewModel.swift
+//  TranscriptListViewModel.swift
 //  Transcord
 //
-//  Created by jinwoong Kim on 11/19/23.
+//  Created by jinwoong Kim on 12/7/23.
 //
 
 import Foundation
 
-final class AudioListViewModel: ObservableObject {
-    @Published var audios: [Audio] = []
+struct Transcript: Identifiable, Hashable {
+    let id: UUID
+    let title: String
+    let url: URL
+}
+
+final class TranscriptListViewModel: ObservableObject {
+    @Published var transcripts: [Transcript] = []
     
     func getDocumentsDirectory() -> URL {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         return paths.first!
     }
-
+    
     func loadFiles() {
         let documentURL = getDocumentsDirectory()
-        let audioListURL = documentURL.appending(path: "audio")
+        let transcriptsListURL = documentURL.appending(path: "transcript")
         
         do {
             let directoryContents = try FileManager.default.contentsOfDirectory(
-                at: audioListURL,
+                at: transcriptsListURL,
                 includingPropertiesForKeys: nil
             )
             
-            audios = directoryContents
+            transcripts = directoryContents
                 .map { url in
-                    Audio(id: UUID(), title: url.lastPathComponent, url: url)
+                    Transcript(id: UUID(), title: url.lastPathComponent, url: url)
                 }
         } catch {
             print("‼️ error: \(error)")

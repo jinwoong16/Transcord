@@ -21,6 +21,11 @@ struct ContentView: View {
                         Image(systemName: "headphones")
                         Text("Audio")
                     }
+                TranscriptListView()
+                    .tabItem {
+                        Image(systemName: "newspaper")
+                        Text("Transcript")
+                    }
             }
             .toolbarBackground(.visible, for: .tabBar)
         }
@@ -32,5 +37,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
             .environmentObject(recordViewModelMock)
             .environmentObject(audioListViewModelMock)
+            .environmentObject(transcriptListViewModelMock)
     }
 }

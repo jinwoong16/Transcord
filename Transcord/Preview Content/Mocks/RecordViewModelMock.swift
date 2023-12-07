@@ -7,5 +7,13 @@
 
 import Foundation
 import PWRecordKit
+import PWTranscribingKit
+import PWNetworkingKit
+import PWApiWorker
 
-let recordViewModelMock: RecordViewModel = RecordViewModel(audioRecorder: DefaultAudioRecorder())
+let recordViewModelMock: RecordViewModel = RecordViewModel(
+    audioRecorder: DefaultAudioRecorder(),
+    transcriber: Transcriber(
+        api: VITOApiService(userAuth: VitoObject())
+    )
+)
