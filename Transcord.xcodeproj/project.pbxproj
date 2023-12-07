@@ -28,6 +28,8 @@
 		839CB5092B217F21002A4C67 /* PWTranscribingKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */; };
 		839CB50A2B217F21002A4C67 /* PWTranscribingKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */; };
+		839CB50F2B2181FD002A4C67 /* TranscriptListViewModelMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */; };
+		839CB5112B21826D002A4C67 /* TranscriptListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839CB5102B21826D002A4C67 /* TranscriptListRow.swift */; };
 		83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */; };
 		83E05D4B2ACEDD1E00B60A98 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */; };
 		83E05D4D2ACEDD1E00B60A98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E05D4C2ACEDD1E00B60A98 /* Assets.xcassets */; };
@@ -93,6 +95,8 @@
 		839CB5052B217F15002A4C67 /* PWApiWorker.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWApiWorker.xcframework; path = "../../swift-framework/PWApiWorker/build/PWApiWorker.xcframework"; sourceTree = "<group>"; };
 		839CB5082B217F21002A4C67 /* PWTranscribingKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = PWTranscribingKit.xcframework; path = "../../swift-framework/PWTranscribingKit/build/PWTranscribingKit.xcframework"; sourceTree = "<group>"; };
 		839CB50C2B217F47002A4C67 /* TranscriptListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListViewModel.swift; sourceTree = "<group>"; };
+		839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListViewModelMock.swift; sourceTree = "<group>"; };
+		839CB5102B21826D002A4C67 /* TranscriptListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscriptListRow.swift; sourceTree = "<group>"; };
 		83E05D452ACEDD1E00B60A98 /* Transcord.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Transcord.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E05D482ACEDD1E00B60A98 /* TranscordApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscordApp.swift; sourceTree = "<group>"; };
 		83E05D4A2ACEDD1E00B60A98 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -140,6 +144,7 @@
 			children = (
 				835F86902B0A1FBD00744A06 /* RecordViewModelMock.swift */,
 				8328D0CF2B0A217E0076009A /* AudioListViewModelMock.swift */,
+				839CB50E2B2181FD002A4C67 /* TranscriptListViewModelMock.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -232,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				839CB4FD2B217EAA002A4C67 /* TranscriptListView.swift */,
+				839CB5102B21826D002A4C67 /* TranscriptListRow.swift */,
 			);
 			path = TranscribeView;
 			sourceTree = "<group>";
@@ -443,7 +449,9 @@
 				835F86762B08BD3900744A06 /* RecordView.swift in Sources */,
 				839CB4FE2B217EAA002A4C67 /* TranscriptListView.swift in Sources */,
 				8328D0D22B0A25A60076009A /* AudioListRow.swift in Sources */,
+				839CB5112B21826D002A4C67 /* TranscriptListRow.swift in Sources */,
 				8328D0D52B0A26A80076009A /* AudioListViewModel.swift in Sources */,
+				839CB50F2B2181FD002A4C67 /* TranscriptListViewModelMock.swift in Sources */,
 				839CB50D2B217F47002A4C67 /* TranscriptListViewModel.swift in Sources */,
 				83E05D492ACEDD1E00B60A98 /* TranscordApp.swift in Sources */,
 				835F86782B08C13900744A06 /* RecordStatusView.swift in Sources */,
