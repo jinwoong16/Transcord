@@ -26,9 +26,21 @@ struct ContentView: View {
                         Image(systemName: "newspaper")
                         Text("Transcript")
                     }
+                ScriptListView()
+                    .tabItem {
+                        Image(systemName: "text.justify")
+                        Text("Script")
+                    }
+                SummaryListView()
+                    .tabItem {
+                        Image(systemName: "highlighter")
+                        Text("Sum-up")
+
+                    }
             }
             .toolbarBackground(.visible, for: .tabBar)
         }
+        .accentColor(Color("MyColor"))
     }
 }
 
@@ -38,5 +50,8 @@ struct ContentView_Previews: PreviewProvider {
             .environmentObject(recordViewModelMock)
             .environmentObject(audioListViewModelMock)
             .environmentObject(transcriptListViewModelMock)
+            .environmentObject(scriptListViewModelMock)
+            .environmentObject(summaryListViewModelMock)
+
     }
 }
