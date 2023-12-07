@@ -7,10 +7,17 @@
 
 import SwiftUI
 import PWRecordKit
+import PWApiWorker
+import PWTranscribingKit
 
 @main
 struct TranscordApp: App {
-    private let recordViewModel = RecordViewModel(audioRecorder: DefaultAudioRecorder())
+    private let recordViewModel = RecordViewModel(
+        audioRecorder: DefaultAudioRecorder(),
+        transcriber: Transcriber(
+            api: VITOApiService(userAuth: VitoObject())
+        )
+    )
     private let audioListViewModel = AudioListViewModel()
     private let transcriptListViewModel = TranscriptListViewModel()
     

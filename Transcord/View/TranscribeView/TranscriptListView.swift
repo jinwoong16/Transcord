@@ -27,6 +27,9 @@ struct TranscriptListView: View {
                 )
             }
         }
+        .onAppear(perform: {
+            viewModel.loadFiles()
+        })
     }
 }
 

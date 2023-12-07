@@ -19,8 +19,9 @@ struct RecordButtonView: View {
             Image(systemName: recordViewModel.isRecording ? "stop.circle" : "record.circle")
                 .font(.system(size: 72))
                 .symbolRenderingMode(.palette)
-                .foregroundStyle(.red, .black)
+                .foregroundStyle(.red.opacity(recordViewModel.isProcessing ? 0.5 : 1.0), .black)
         }
+        .disabled(recordViewModel.isProcessing)
     }
 }
 
